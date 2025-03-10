@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кнопка</title>
+    <title>В разработке</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
         }
         button {
             font-size: 20px;
             padding: 10px 20px;
             cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <button onclick="alert('Нажал!')">Нажми меня</button>
+    <h1>В разработке</h1>
+    <button onclick="window.location.href='https://t.me/free_voice_chatbot'">Перейти в Telegram</button>
 </body>
 </html>
