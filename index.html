@@ -1,38 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>В разработке</title>
+    <title>Contact Sedr</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('studio-interior.jpg'); /* Замените на URL вашего изображения */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Белый текст для лучшей видимости на фоне */
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон для блока с информацией */
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 80%;
+            width: 500px;
+        }
+
         h1 {
+            color: #eee;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .info-item {
             margin-bottom: 20px;
+            text-align: left;
         }
-        button {
-            font-size: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
+
+        .info-item strong {
+            color: #ddd;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
         }
-        button:hover {
-            background-color: #0056b3;
+
+        .info-item span {
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        .about-me {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .about-me p {
+            line-height: 1.6;
+            color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>В разработке</h1>
-    <button onclick="window.location.href='https://t.me/free_voice_chatbot'">Перейти в Telegram</button>
+    <div class="container">
+        <h1>Contact Information</h1>
+        <div class="info-item">
+            <strong>Alias:</strong>
+            <span>sedr</span>
+        </div>
+        <div class="info-item">
+            <strong>Real Name:</strong>
+            <span>Valera Chernykh</span>
+        </div>
+        <div class="info-item">
+            <strong>Official Email:</strong>
+            <span><a href="mailto:egordatcin11@gmail.com" style="color: #a7d1eb; text-decoration: none;">egordatcin11@gmail.com</a></span>
+        </div>
+        <div class="info-item">
+            <strong>Date of Birth:</strong>
+            <span>May 13, 2000</span>
+        </div>
+        <div class="about-me">
+            <strong>About Me:</strong>
+            <p>Hi, I'm Sedr, a budding artist. Thank you for finding your way to me!</p>
+        </div>
+    </div>
 </body>
 </html>
